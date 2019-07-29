@@ -1,0 +1,22 @@
+#about-section {
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 90%;
+  h2 {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .about-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .peg {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    width: 80%;
+    border-radius: 100%;
+  }
+}

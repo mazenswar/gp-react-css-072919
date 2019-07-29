@@ -1,0 +1,52 @@
+$dark-grey: #262626;
+$light-grey: #eeeeee;
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  animation-name: dom;
+  animation-duration: 3s;
+}
+
+@keyframes dom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  position: relative;
+  width: 80%;
+  border-radius: 40px;
+  margin: 100px auto;
+  padding: 5vw;
+  background-color: $dark-grey;
+  color: $light-grey;
+  h2 {
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 2vw;
+  }
+  .pika {
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    width: 100px;
+    height: 0;
+    transition: 0.3s;
+  }
+  &:hover {
+    .pika {
+      height: 100px;
+    }
+  }
+}
