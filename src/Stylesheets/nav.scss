@@ -2,19 +2,17 @@ $dark-grey: #262626;
 
 nav {
   display: grid;
-  grid-template-columns: 10% 10% 10% 30% 40%;
+  grid-template-columns: 1fr 1fr 1fr 3fr 4fr;
   justify-items: center;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   background-color: $dark-grey;
   padding: 2vw;
   color: white;
   h2 {
     font-size: 3vw;
   }
-
   a {
-    margin: auto 2vw;
     text-decoration: none;
     color: white;
     padding: 1vw 3vw;
